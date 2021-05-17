@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Cards.css";
 
-export default function Cards({ name, gender, species, status }) {
+export default function Cards({ image, name, gender, species, status }) {
   const [isActive, setIsActive] = useState(false);
 
   return (
@@ -11,6 +11,7 @@ export default function Cards({ name, gender, species, status }) {
         <button onClick={() => setIsActive(!isActive)}>Show more</button>
         {isActive && (
           <ul className="Cards__list">
+            <li>{image}</li>
             <li>{gender}</li>
             <li>{species}</li>
             <li>{status}</li>

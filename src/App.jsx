@@ -17,10 +17,11 @@ export default function App() {
     <div className="App">
       <h1 className="App">Rick & Morty Characters</h1>
       {characters.map((character) => {
-        const { name, gender, species, status } = character;
+        const { image, name, gender, species, status } = character;
 
         return (
           <Cards
+            image={image}
             name={name}
             gender={gender}
             species={species}
