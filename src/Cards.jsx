@@ -6,7 +6,7 @@ export default function Cards({ name, gender, species, status }) {
 
   return (
     <section className="Cards">
-      <div className="Cards_style">
+      <div className="Cards__style">
         <h2 className="Cards__header">{name}</h2>
         <button onClick={() => setIsActive(!isActive)}>Show more</button>
         {isActive && (
